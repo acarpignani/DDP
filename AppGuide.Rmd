@@ -1,0 +1,43 @@
+---
+title: "Statistical Inference Peer Assessment"
+author: "Andrea Carpignani"
+date: "`r Sys.Date()`"
+output:
+  beamer_presentation: default
+  ioslides_presentation: default
+widgets: mathjax
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(cache = TRUE)
+```
+
+## Purpose of the app
+
+The app shows a Monte Carlo simulation which estimates $\pi$.
+
+## Model
+
+The software creates two sequence of independent random variables $X_1, \dots, X_n$ and $Y_1, \dots, Y_n$ with uniform distribution in $[-1,1]$, then counts the number $N$ of points of the form $(X_i,Y_i)$ which are inside the circle, i.e. such that $X_i^2 + Y_i^2 < 1$.
+
+***
+
+For the law of large numbers, the ratio of the number of points that fall inside the circle, $N$, to the total number of points generated, $n$, tends towards the ratio of the area of the circle, $\pi$, to the ratio of the area of the square, $4$. Thus
+$$ \dfrac{N}{n} \approx \dfrac{\pi}{4} $$
+
+***
+
+The software gives therefore the number
+$$ 4 \times \dfrac{N}{n} $$
+as an estimate of $\pi$.
+
+
+## Use of the App
+
+To use the app, 
+
+* type a number between 10 and 10000 and press the button "Submit". 
+
+The graph will show the points randomly generated in red if they are inside the circle and in black if they are outside the circle, and the approximation of $\pi$ found with the simulation.
+
+
