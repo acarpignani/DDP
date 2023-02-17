@@ -1,4 +1,6 @@
-# Developing Data Products PA3
+# Developing Data Products PA3
+
+Andrea Carpignani, 16 February 2023
 
 ## Readme
 
